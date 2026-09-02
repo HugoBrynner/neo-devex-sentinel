@@ -1,0 +1,128 @@
+{
+  "tool": "Neo DevEx Sentinel",
+  "version": "0.1.0",
+  "old_label": "v3.10.0",
+  "new_label": "v3.10.1",
+  "summary": {
+    "total_changes": 10,
+    "high": 0,
+    "medium": 9,
+    "low": 1
+  },
+  "changes": [
+    {
+      "kind": "public_type_added",
+      "symbol": "AccessControl",
+      "path": "AccessControl.cs",
+      "before": null,
+      "after": "public abstract class AccessControl",
+      "severity": "medium",
+      "docs_exact": [],
+      "docs_related": [],
+      "note": "New public API surface; documentation coverage should be reviewed."
+    },
+    {
+      "kind": "public_type_added",
+      "symbol": "Ownable2Step",
+      "path": "Ownable2Step.cs",
+      "before": null,
+      "after": "public abstract class Ownable2Step",
+      "severity": "medium",
+      "docs_exact": [],
+      "docs_related": [],
+      "note": "New public API surface; documentation coverage should be reviewed."
+    },
+    {
+      "kind": "public_type_added",
+      "symbol": "PausableOwnable",
+      "path": "PausableOwnable.cs",
+      "before": null,
+      "after": "public abstract class PausableOwnable",
+      "severity": "medium",
+      "docs_exact": [],
+      "docs_related": [],
+      "note": "New public API surface; documentation coverage should be reviewed."
+    },
+    {
+      "kind": "public_type_added",
+      "symbol": "RoyaltyNep11Token",
+      "path": "RoyaltyNep11Token.cs",
+      "before": null,
+      "after": "public abstract class RoyaltyNep11Token<TokenState>",
+      "severity": "medium",
+      "docs_exact": [],
+      "docs_related": [
+        "nep11.md"
+      ],
+      "note": "New public API surface; documentation coverage should be reviewed."
+    },
+    {
+      "kind": "public_method_added",
+      "symbol": "AcceptOwnership",
+      "path": "Ownable2Step.cs",
+      "before": null,
+      "after": "void AcceptOwnership()",
+      "severity": "medium",
+      "docs_exact": [],
+      "docs_related": [],
+      "note": null
+    },
+    {
+      "kind": "public_method_added",
+      "symbol": "GetOwner",
+      "path": "Ownable2Step.cs",
+      "before": null,
+      "after": "UInt160? GetOwner()",
+      "severity": "medium",
+      "docs_exact": [],
+      "docs_related": [],
+      "note": null
+    },
+    {
+      "kind": "public_method_added",
+      "symbol": "OnlyRole",
+      "path": "AccessControl.cs",
+      "before": null,
+      "after": "void OnlyRole(int role, UInt160 account)",
+      "severity": "medium",
+      "docs_exact": [],
+      "docs_related": [],
+      "note": null
+    },
+    {
+      "kind": "public_method_added",
+      "symbol": "Pause",
+      "path": "PausableOwnable.cs",
+      "before": null,
+      "after": "void Pause()",
+      "severity": "medium",
+      "docs_exact": [],
+      "docs_related": [],
+      "note": null
+    },
+    {
+      "kind": "public_method_added",
+      "symbol": "RoyaltyInfo",
+      "path": "RoyaltyNep11Token.cs",
+      "before": null,
+      "after": "Map<string, object>[] RoyaltyInfo(ByteString tokenId, UInt160 royaltyToken, BigInteger salePrice)",
+      "severity": "low",
+      "docs_exact": [
+        "nep11.md"
+      ],
+      "docs_related": [],
+      "note": null
+    },
+    {
+      "kind": "public_method_added",
+      "symbol": "Unpause",
+      "path": "PausableOwnable.cs",
+      "before": null,
+      "after": "void Unpause()",
+      "severity": "medium",
+      "docs_exact": [],
+      "docs_related": [],
+      "note": null
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "tool": "Neo DevEx Sentinel",
+  "version": "0.1.0",
+  "old_label": "v3.7.4",
+  "new_label": "v3.8.1",
+  "summary": {
+    "total_changes": 1,
+    "high": 1,
+    "medium": 0,
+    "low": 0
+  },
+  "changes": [
+    {
+      "kind": "target_framework_changed",
+      "symbol": "Neo.SmartContract.Framework",
+      "path": "Neo.SmartContract.Framework.csproj",
+      "before": "net8.0",
+      "after": "net9.0",
+      "severity": "high",
+      "docs_exact": [
+        "develop.md"
+      ],
+      "docs_related": [],
+      "note": "Runtime/framework requirement changed; docs mentioning the old runtime require review."
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+namespace Neo.SmartContract.Framework { public abstract class RoyaltyNep11Token<TokenState> : Nep11Token<TokenState> { public static Map<string, object>[] RoyaltyInfo(ByteString tokenId, UInt160 royaltyToken, BigInteger salePrice) { return null; } } }
